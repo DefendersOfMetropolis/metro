@@ -1,0 +1,108 @@
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+.section-description {
+	/*  edits words within section */
+}
+
+/* Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.home {
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+.home-multiplier {
+  color: #11DFC7;
+}
+.home-heading {
+	color: #A13F7;
+	font-weight: 50 ;
+}
+.home-description {
+	color: #111F27;
+	font-weight: 50 ;
+	opacity: 0.8 ;
+}
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  color: #fff;
+}
+
+
+
+
+/* ------ TABS ---------   */
+div.tab {
+    overflow: hidden;
+    border: 2px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 24px 28px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+	  /* put section stuff here */
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+
+
+.tabcontent {
+	display: none;
+    padding: 12px 18px;
+    border: 1px solid #ccc;
+    border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 3s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

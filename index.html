@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Metropolis Light</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- CSS --> 
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+	
+<div class="tab">
+  <button class="tablinks" onclick="openPage(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openPage(event, 'Present')">Presentation</button>
+  <button class="tablinks" onclick="openPage(event, 'Page 3')">Other page here</button>
+   <button class="tablinks" onclick="openPage(event, 'Page 4')">Other page here</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Home</h3>
+  <p>Landing Page here</p>
+</div>
+
+<div id="Present" class="tabcontent">
+  <h3>Presentation</h3>
+  <p>Our research so far</p> 
+</div>
+
+<div id="Page 3" class="tabcontent">
+  <h3>Other page here</h3>
+  <p>I forget whats the third page</p>
+</div>
+
+<div id="Page 4" class="tabcontent">
+  <h3>Other page here</h3>
+  <p>I forget whats the fourth page</p>
+</div>
+
+<script>
+function openPage(evt, pageName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(pageName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="section values">
+      <div class="row">
+        <div class="one-third column value">
+          <h2 class="home-multiplier">Metropolis Light Transport</h2>
+		  <p class="home-description">Metropolis Light Transport is an application of a variant of the Monte Carlo method called the Metropolis-Hastings algorithm to the rendering equation for generating images from detailed physical descriptions of three-dimensional scenes</p>
+		  <img src= "images/metro.jpg" alt="picture1goeshere" > 
+        </div>
+        <div class="one-third column value">
+          <h2 class="home-multiplier">How it can changes perception of teture</h2>
+          <p class="home-description">The procedure constructs paths from the eye to a light source using bidirectional path tracing, then constructs slight modifications to the paths</p>
+		  <img src= "images/metro2.jpg" alt="picture2goeshere" > 
+		</div>
+        <div class="one-third column value">
+          <h2 class="home-multiplier">Please give us an A</h2>
+          <h5 class="home-heading">Cap3027 Intro to Digital Arts and Sciences Engineering</h5>
+		  <img src= "images/dave.PNG" alt="picture3goeshere" > 
+        </div>
+      </div>
+  </div>
+
+  <div class="section get-help">
+    <div class="container">
+      <h3 class="section-heading"></h3>
+      <p class="section-description">Website created by:</p>
+	  <h5 class="home-heading">Logan Cundiff</h5>
+	  <h5 class="home-heading">Logan Peck (the cooler Logan)</h5>
+	  <h5 class="home-heading">Michael Levecque</h5>
+	  <h5 class="home-heading">Johnathan Pereya</h5>
+    </div>
+  </div>
+
+  <div class="section categories">
+    <div class="container">
+      <h3 class="section-heading">Responsive Images</h3>
+      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
+      <div class="row">
+        <div class="one-half column category">
+        </div>
+        <div class="one-half column category">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
