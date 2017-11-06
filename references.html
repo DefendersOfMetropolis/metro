@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Metropolis Light</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- CSS --> 
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+	
+<div class="tab">
+  <button class="tablinks" onclick="openPage(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openPage(event, 'Present')">Presentation</button>
+  <button class="tablinks" onclick="openPage(event, 'Page 3')">References</button>
+   <button class="tablinks" onclick="openPage(event, 'Page 4')">Team Members</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Home</h3>
+  <p>Landing Page here</p>
+</div>
+
+<div id="Present" class="tabcontent">
+  <h3>Presentation</h3>
+  <p>Our research so far</p> 
+</div>
+
+<div id="Page 3" class="tabcontent">
+  <h3>Other page here</h3>
+  <p>I forget whats the third page</p>
+</div>
+
+<div id="Page 4" class="tabcontent">
+  <h3>Other page here</h3>
+  <p>I forget whats the fourth page</p>
+</div>
+
+<script>
+function openPage(evt, pageName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(pageName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+ 
+
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
