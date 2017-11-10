@@ -2,6 +2,10 @@
 GENERAL
 ***********************************/
 
+h1, h2, h3 {
+  font-family: 'Work Sans', sans-serif;
+}
+
 body {
   font-family: 'Roboto Slab', serif;
 }
@@ -75,6 +79,7 @@ nav ul {
 }
 
 nav li {
+  font-family: 'Work Sans', sans-serif;
   display: inline-block;
 }
 
