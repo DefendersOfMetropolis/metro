@@ -1,118 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Metropolis Light</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- FONTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-  <!-- CSS --> 
-  <link rel="stylesheet" href="css/custom.css">
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	
-	
-<div class="tab">
-  <button class="tablinks" onclick="openPage(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openPage(event, 'Present')">Presentation</button>
-  <button class="tablinks" onclick="openPage(event, 'Page 3')">References</button>
-   <button class="tablinks" onclick="openPage(event, 'Page 4')">Team Members</button>
-
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>Home</h3>
-  <a href="index.html">Home</a>
-  <p>Landing Page here</p>
-</div>
-
-<div id="Present" class="tabcontent">
-  <h3><a href="presentation.html">Presentation</a></h3>
-  
-  <p>Our research so far</p> 
-</div>
-
-<div id="Page 3" class="tabcontent">
-<!--   <h3>Other page here</h3> -->
-  <a href="references.html">References</a>
-<!--   <p>I forget whats the third page</p> -->
-</div>
-
-<div id="Page 4" class="tabcontent">
-<!--   <h3>Other page here</h3> -->
-  <a href="teammembers.html">Team Members</a>
-<!--   <p>I forget whats the fourth page</p> -->
-</div>
-
-        <div class="one-third column value" align="center">
-          <h2 class="home-multiplier">CAP3027</h2>
-          <h5 class="home-heading">Intro to Digital Arts and Sciences Engineering</h5>
-          <h5 class="additional header">Fall 2017</h5>
-<!-- 		  <img src= "images/dave.PNG" alt="picture3goeshere" >  -->
-        </div>
-
-<script>
-function openPage(evt, pageName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(pageName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<a href="Script.pdf">VIEW SCRIPT</a>
-  <div class="section values">
-      <div class="row">
-        <div class="one-third column value">
-          <h2 class="home-multiplier">Metropolis Light Transport</h2>
-		  <p class="home-description">Metropolis Light Transport is an application of a variant of the Monte Carlo method called the Metropolis-Hastings algorithm to the rendering equation for generating images from detailed physical descriptions of three-dimensional scenes</p>
-		  <img src= "images/metro.jpg" alt="picture1goeshere" > 
-        </div>
-        <div class="one-third column value">
-          <h2 class="home-multiplier">How it Can Change the Perception of Texture</h2>
-          <p class="home-description">The procedure constructs paths from the eye to a light source using bidirectional path tracing, then constructs slight modifications to the paths</p>
-		  <img src= "images/metro2.jpg" alt="picture2goeshere" > 
-		</div>
-        
-      </div>
-  </div>
-
-  
-
-  <div class="section categories">
-    <div class="container">
-      <h3 class="section-heading">Responsive Images</h3>
-      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
-      <div class="row">
-        <div class="one-half column category">
-        </div>
-        <div class="one-half column category">
-        </div>
-      </div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>  </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <!-- <img src=""> -->
+        <h1>DEFENDERS OF METROPOLIS</h1>
+        <h2>Studying Metropolis Light Transport</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="selected">PRESENTATION</a></li>
+          <li><a href="about.html">REFERENCES</a></li>
+          <li><a href="contact.html">TEAM MEMBERS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section>
+        <ul id="gallery">
+          <li>
+            <a href="img/numbers-01.jpg">
+              <img src="img/numbers-01.jpg" alt="">
+              <p>Experimentation with color and texture.</p>
+            </a>
+          </li>
+          <li>
+            <a href="img/numbers-02.jpg">
+              <img src="img/numbers-02.jpg" alt="">
+              <p>Playing with blending modes in Photoshop.</p>
+            </a>
+          </li>
+          <li>
+            <a href="img/numbers-06.jpg">
+              <img src="img/numbers-06.jpg" alt="">
+              <p>Trying to create an 80's style of glows.</p>
+            </a>
+          </li>
+          <li>
+            <a href="img/numbers-09.jpg">
+              <img src="img/numbers-09.jpg" alt="">
+              <p>Drips created using Photoshop brushes.</p>
+            </a>
+          </li>
+          <li>
+            <a href="img/numbers-12.jpg">
+              <img src="img/numbers-12.jpg" alt="">
+              <p>Creating shapes using repetition.</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <a href="http://twitter.com/nickrp"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com/nickpettit"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2014 Nick Pettit.</p>
+      </footer>
     </div>
-  </div>
-
-
-
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+  </body>
 </html>
