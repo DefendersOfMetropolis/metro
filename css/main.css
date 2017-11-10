@@ -4,6 +4,8 @@ GENERAL
 
 h1, h2, h3 {
   font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 body {
@@ -120,15 +122,43 @@ PAGE: HOME
   text-align: center;
 }
 
-
 .home-wrapper-content{
   margin: 15px 0;
 }
 
+/**********************************
+PAGE: PRESENTATION
+***********************************/
 
+#presentation-wrapper h2{
+  margin-top: 15px;
+  margin-left: 15px;
+  color:  #F4504D;
+}
+
+.presentation-wrapper-content{
+  margin: 45px 0;
+}
+
+#primary,
+#primary h2{
+  background:  #FFED78;
+  color: #F4504D;
+}
+#secondary,
+#secondary h2{
+  background:  #F4504D;
+  color: #FFED78;
+  text-align:left;
+}
+
+#presentation-wrapper a{
+  color: #000;
+  text-decoration: underline;
+}
 
 /**********************************
-PAGE: ABOUT
+PAGE:
 ***********************************/
 
 .profile-photo {
