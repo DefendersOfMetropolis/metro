@@ -2,7 +2,7 @@
 GENERAL
 ***********************************/
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
   margin: 0;
@@ -15,7 +15,7 @@ body {
 #home-wrapper,
 #presentation-wrapper,
 #references-wrapper,
-#members-references {
+#members-wrapper {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
@@ -118,7 +118,6 @@ PAGE: HOME
 
 #home-wrapper h1,
 #home-wrapper h2{
-  margin: 0;
   text-align: center;
 }
 
@@ -158,50 +157,19 @@ PAGE: PRESENTATION
 }
 
 /**********************************
-PAGE:
+PAGE: REFERENCES
 ***********************************/
 
-.profile-photo {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
-}
 
 
 
 /**********************************
-PAGE: CONTACT
+PAGE: MEMBERS
 ***********************************/
 
-.contact-info {
-  list-style: none;
-  padding: 0;
+#members-wrapper p{
   margin: 0;
-  font-size: 0.9em;
 }
-
-.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-}
-
-.contact-info li.phone a {
-  background-image: url('../img/phone.png');
-}
-
-.contact-info li.mail a {
-  background-image: url('../img/mail.png');
-}
-
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
-}
-
 
 
 /**********************************
