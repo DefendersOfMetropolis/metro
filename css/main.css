@@ -140,13 +140,13 @@ PAGE: PRESENTATION
   margin: 45px 0;
 }
 
-#primary,
-#primary h2{
+#presentation-primary,
+#presentation-primary h2{
   background:  #FFED78;
   color: #F4504D;
 }
-#secondary,
-#secondary h2{
+#presentation-secondary,
+#presentation-secondary h2{
   background:  #F4504D;
   color: #FFED78;
   text-align:left;

@@ -4,12 +4,12 @@
   TWO COLUMN LAYOUT
   ***********************************/
 
-  #primary {
+  #presentation-primary {
     width: 45%;
     float: left;
   }
 
-  #secondary {
+  #presentation-secondary {
     width: 45%;
     float: right;
   }
