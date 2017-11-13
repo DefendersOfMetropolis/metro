@@ -134,6 +134,11 @@ PAGE: HOME
   margin: 15px 0;
 }
 
+.home-wrapper-content p {
+  margin: 45px 0;
+}
+
+
 /**********************************
 PAGE: PRESENTATION
 ***********************************/
