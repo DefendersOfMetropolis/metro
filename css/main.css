@@ -187,6 +187,18 @@ PAGE: MEMBERS
   margin: 0;
 }
 
+#members-wrapper li{
+  list-style: none;
+  margin: 45px 0;
+  text-align: center;
+
+
+}
+
+.member-photo{
+  width: 200px;
+  border-radius: 200px;
+}
 
 /**********************************
 COLORS
