@@ -47,16 +47,19 @@
     background: none;
     float: right;
     font-size: 1.125em;
-    margin-right: 5%;
+    margin-right: 3%;
     text-align: right;
     width: 45%;
   }
 
+header a{
+  margin-left: 3%;
+}
   #logo {
     float: left;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
     text-align: left;
-    width: 45%;
+    /*width: 45%;*/
   }
 
   #logo h1 {
