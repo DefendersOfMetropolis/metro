@@ -1,82 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Metropolis Light</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- FONTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/custom.css">
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
-<div class="tab">
-  <button class="tablinks" onclick="openPage(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openPage(event, 'Present')">Presentation</button>
-  <button class="tablinks" onclick="openPage(event, 'Page 3')">References</button>
-   <button class="tablinks" onclick="openPage(event, 'Page 4')">Team Members</button>
-
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>Home</h3>
-  <a href="index.html">Home</a>
-  <p>Landing Page here</p>
-</div>
-
-<div id="Present" class="tabcontent">
-  <h3><a href="presentationv1.pptx">Presentation</a></h3>
-
-  <p>Our research so far</p>
-</div>
-
-<div id="Page 3" class="tabcontent">
-<!--   <h3>Other page here</h3> -->
-  <a href="references.html">References</a>
-<!--   <p>I forget whats the third page</p> -->
-</div>
-
-<div id="Page 4" class="tabcontent">
-<!--   <h3>Other page here</h3> -->
-  <a href="teammembers.html">Team Members</a>
-<!--   <p>I forget whats the fourth page</p> -->
-</div>
-
-<script>
-function openPage(evt, pageName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(pageName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-
-
-
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CAP 3027 | Defenders of Metropolis</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <!-- <img src=""> -->
+        <div class="logo-img">
+          <div>
+            <img src="img/dofm_logo.png" alt="" width="100" height="100">
+          </div>
+        </div>
+        <div class="logo-text">
+          <h1>DEFENDERS OF METROPOLIS</h1>
+          <h2>Studying Metropolis Light Transport</h2>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="presentation.html" class="selected">PRESENTATION</a></li>
+          <li><a href="references.html">REFERENCES</a></li>
+          <li><a href="members.html">MEMBERS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="presentation-wrapper">
+      <h1>Presentation Timeline</h1>
+      <p>Join us on a journey as we study Metropolis Light Transport, and prepare a presentation to showcase to our classmates. Below you can find a timeline of our progress on our presentation and script.</p>
+      <div class="presentation-wrapper-content">
+        <section id="presentation-primary">
+          <h2 id="presentation-title">Presentation</h2>
+          <ul>
+            <li>
+              <a href="presentation/presentationv1.pptx">Version 11.13.2017</a>
+            </li>
+            <li>
+              <a href="presentation/presentationv0.pptx">Version 11.06.2017</a>
+            </li>
+          </ul>
+        </section>
+        <section id="presentation-secondary">
+          <h2  id="script-title">Script</h2>
+          <ul>
+            <li>
+              <a href="presentation/Script1.pdf">Version 11.13.2017</a>
+            </li>
+            <li>
+              <a href="presentation/Script0.pdf">Version 11.06.2017</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <footer>
+        <p>&copy; 2017 Defenders of Metropolis</p>
+      </footer>
+    </div>
+  </body>
 </html>
