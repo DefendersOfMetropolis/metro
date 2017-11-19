@@ -192,12 +192,27 @@ PAGE: MEMBERS
   margin: 45px 0;
   text-align: center;
 
-
 }
 
 .member-photo{
   width: 200px;
   border-radius: 200px;
+  padding-bottom: 15px;
+}
+
+#members-wrapper h1{
+  font-size: 3em;
+  /*background: #FFED78;
+  padding: 5px 10px;
+  color: #000;*/
+}
+
+#members-wrapper h3{
+  font-size: 2em;
+  background: #FFED78;
+  padding: 5px 10px;
+  color: #000;
+  text-align: center;
 }
 
 /**********************************
